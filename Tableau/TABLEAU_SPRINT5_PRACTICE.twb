@@ -1,0 +1,2334 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' inline='true' name='federated.09xuovd0d8mdap10h4r4w1japmu1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='textscan.0foidw80mx3ede1fi87y31oqdt7v'>
+            <connection class='textscan' directory='C:/Users/marur/Downloads' filename='DS1_C6_S5_VideoGamesSales_Data_Practice.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0foidw80mx3ede1fi87y31oqdt7v' name='DS1_C6_S5_VideoGamesSales_Data_Practice.csv' table='[DS1_C6_S5_VideoGamesSales_Data_Practice#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='Game Title' ordinal='1' />
+            <column datatype='string' name='Platform' ordinal='2' />
+            <column datatype='datetime' date-parse-format='yyyy' name='Year' ordinal='3' />
+            <column datatype='string' name='Genre' ordinal='4' />
+            <column datatype='string' name='Publisher' ordinal='5' />
+            <column datatype='real' name='North America' ordinal='6' />
+            <column datatype='real' name='Europe' ordinal='7' />
+            <column datatype='real' name='Japan' ordinal='8' />
+            <column datatype='real' name='Rest of World' ordinal='9' />
+            <column datatype='real' name='Global' ordinal='10' />
+            <column datatype='real' name='Review' ordinal='11' />
+            <column datatype='integer' name='Profit' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Game Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Game Title]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Game Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Platform</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Platform]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Platform</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genre]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Genre</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Publisher]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Publisher</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>North America</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[North America]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>North America</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Europe</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Europe]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Europe</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Japan</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Japan]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Japan</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rest of World</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rest of World]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Rest of World</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Global</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Global]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Global</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Review]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Review</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Europe (bin)' datatype='integer' name='[Europe (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Europe]' peg='0' size='2' />
+      </column>
+      <column datatype='real' name='[Europe]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Global (bin)' datatype='integer' name='[Global (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Global]' peg='0' size='4' />
+      </column>
+      <column datatype='real' name='[Global]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Japan (bin)' datatype='integer' name='[Japan (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Japan]' peg='0' size='2' />
+      </column>
+      <column datatype='real' name='[Japan]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='North America (bin)' datatype='integer' name='[North America (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[North America]' peg='0' size='2' />
+      </column>
+      <column datatype='real' name='[North America]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Publisher]' role='dimension' type='nominal' />
+      <column datatype='datetime' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='DS1_C6_S5_VideoGamesSales_Data_Practice.csv' datatype='table' name='[__tableau_internal_object_id__].[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]' role='measure' type='quantitative' />
+      <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Publisher]' derivation='None' name='[none:Publisher:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+      <group hidden='true' name='[Exclusions (Publisher,YEAR(Year))]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Publisher:nk]' />
+          <groupfilter function='level-members' level='[tyr:Year:qk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/marur/AppData/Local/Temp/TableauTemp/#TableauTemp_1d8tf1u0d163081fav7101y8sda7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/02/2024 03:55:27 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='datetime' date-parse-format='yyyy' name='Year' />
+            </columns>
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rank</remote-alias>
+              <ordinal>0</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1907</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Game Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Game Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Game Title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1222</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Platform</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Platform]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Platform</remote-alias>
+              <ordinal>2</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genre</remote-alias>
+              <ordinal>4</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Publisher</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Publisher]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Publisher</remote-alias>
+              <ordinal>5</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>North America</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[North America]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>North America</remote-alias>
+              <ordinal>6</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>339</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Europe</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Europe]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Europe</remote-alias>
+              <ordinal>7</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Japan</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Japan]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Japan</remote-alias>
+              <ordinal>8</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>197</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rest of World</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rest of World]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rest of World</remote-alias>
+              <ordinal>9</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>112</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Global</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Global]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Global</remote-alias>
+              <ordinal>10</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>412</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Review</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Review]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Review</remote-alias>
+              <ordinal>11</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>613</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit</remote-alias>
+              <ordinal>12</ordinal>
+              <family>DS1_C6_S5_VideoGamesSales_Data_Practice.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:Year:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>1990</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>2010</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>2002</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1986</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2006</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>1994</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>1991</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>2011</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>1987</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>2007</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>2000</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1983</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2003</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>1998</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>1988</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>2008</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>1995</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>1996</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>1999</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>2001</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1992</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>1989</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>2009</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1984</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2004</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>1997</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>1993</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>1985</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2005</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Genre:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Shooter&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Action&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Platform&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Simulation&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Puzzle&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Adventure&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Racing&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sports&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Role-Playing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Fighting&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Strategy&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Misc&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='DS1_C6_S5_VideoGamesSales_Data_Practice.csv' id='DS1_C6_S5_VideoGamesSales_Data_Practice.csv_E186AD3C3A5749049F67CE131D347CB1'>
+            <properties context=''>
+              <relation connection='textscan.0foidw80mx3ede1fi87y31oqdt7v' name='DS1_C6_S5_VideoGamesSales_Data_Practice.csv' table='[DS1_C6_S5_VideoGamesSales_Data_Practice#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Rank' ordinal='0' />
+                  <column datatype='string' name='Game Title' ordinal='1' />
+                  <column datatype='string' name='Platform' ordinal='2' />
+                  <column datatype='datetime' date-parse-format='yyyy' name='Year' ordinal='3' />
+                  <column datatype='string' name='Genre' ordinal='4' />
+                  <column datatype='string' name='Publisher' ordinal='5' />
+                  <column datatype='real' name='North America' ordinal='6' />
+                  <column datatype='real' name='Europe' ordinal='7' />
+                  <column datatype='real' name='Japan' ordinal='8' />
+                  <column datatype='real' name='Rest of World' ordinal='9' />
+                  <column datatype='real' name='Global' ordinal='10' />
+                  <column datatype='real' name='Review' ordinal='11' />
+                  <column datatype='integer' name='Profit' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='datetime' date-parse-format='yyyy' name='Year' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{009FE713-CF9E-41C0-925B-68D14BB8FA1A}' />
+    </worksheet>
+    <worksheet name='TASK 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>INTERPRETATION</run>
+            <run>: Displayed the Genre wise sales distribution of europe and north america
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column datatype='real' name='[Europe]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='real' name='[North America]' role='measure' type='quantitative' />
+            <column datatype='datetime' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Europe]' derivation='Sum' name='[sum:Europe:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[North America]' derivation='Sum' name='[sum:North America:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' value='92' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Year:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Europe:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Europe:qk]' z-order='1' />
+            <reference-line axis-column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:North America:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:North America:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Europe:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:North America:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Europe:qk] + [federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:North America:qk])</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]</cols>
+      </table>
+      <simple-id uuid='{3412E82A-6FDC-4009-A933-0AD4C594A9C9}' />
+    </worksheet>
+    <worksheet name='TASK 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#499894'>INTERPRETATION :</run>
+            <run>Displayed the Year wise global sales distribution from 2003 to 2012
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Global]' role='measure' type='quantitative' />
+            <column datatype='datetime' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Global]' derivation='Sum' name='[sum:Global:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Year:ok]' member='2003' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2004' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2005' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2006' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2008' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2009' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2010' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2011' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2012' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]' />
+              <size column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Global:qk]' />
+              <lod column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.57071822881698608' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{E4E5E158-06A6-4556-A4C6-49F25CB51949}' />
+    </worksheet>
+    <worksheet name='TASK1-2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#59a14f'>INTERPRETATION:</run>
+            <run> The widest distribution of sales was found in the genre of  shooter and action and sports
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column datatype='real' name='[Europe]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='real' name='[North America]' role='measure' type='quantitative' />
+            <column datatype='datetime' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Europe]' derivation='Sum' name='[sum:Europe:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[North America]' derivation='Sum' name='[sum:North America:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' value='83' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' />
+              <lod column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Europe:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Europe:qk]' z-order='1' />
+            <reference-line axis-column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:North America:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:North America:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Europe:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' />
+              <lod column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:North America:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' />
+              <lod column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Europe:qk] + [federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:North America:qk])</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]</cols>
+      </table>
+      <simple-id uuid='{6494C2F3-4367-4F7B-A632-32FA7638676B}' />
+    </worksheet>
+    <worksheet name='TASK2-2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b' underline='true'>INTERPRETATION: </run>
+            <run>The widest distribution of sales was found in the year of 2006 and  2009</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Global]' role='measure' type='quantitative' />
+            <column datatype='datetime' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Global]' derivation='Sum' name='[sum:Global:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Year:ok]' member='2003' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2004' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2005' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2006' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2008' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2009' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2010' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2011' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2012' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]' />
+              <size column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Global:qk]' />
+              <lod column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{A7A9A2DC-0D99-4CB2-9026-27FF92FC93F9}' />
+    </worksheet>
+    <worksheet name='TASK3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#59a14f'>INTERPRETATION:</run>
+            <run>Year wise and publisher wise global sales distribution
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column datatype='real' name='[Global]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Publisher]' role='dimension' type='nominal' />
+            <column datatype='datetime' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Publisher]' derivation='None' name='[none:Publisher:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Global]' derivation='Sum' name='[sum:Global:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Year:ok]' member='2003' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2004' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2005' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2006' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2008' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2009' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2010' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2011' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2012' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]' palette='red_green_white_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#606b76a5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]' />
+              <lod column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]' />
+              <lod column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Publisher:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Global:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' value-column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Global:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.1974033117294312' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Publisher:nk]</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Global:qk]</cols>
+      </table>
+      <simple-id uuid='{0F756CBF-10BE-4192-B8FF-1C245056D914}' />
+    </worksheet>
+    <worksheet name='TASK4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#499894' underline='true'>INTERPRETATION:</run>
+            <run>Year wise sales of Europe and japan and north america.And nort america has highest sales.
+
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column datatype='real' name='[Europe]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Japan]' role='measure' type='quantitative' />
+            <column datatype='real' name='[North America]' role='measure' type='quantitative' />
+            <column datatype='datetime' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Europe]' derivation='Sum' name='[sum:Europe:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Japan]' derivation='Sum' name='[sum:Japan:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[North America]' derivation='Sum' name='[sum:North America:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Europe:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Japan:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:North America:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Europe:qk] + ([federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Japan:qk] + [federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:North America:qk]))</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{4BFF6C39-4B68-4549-83CB-56FD64A64067}' />
+    </worksheet>
+    <worksheet name='TASK5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>I</run>
+            <run bold='true' fontcolor='#4e79a7' underline='true'>NTERPRETATION</run>
+            <run>:Global sales ditribution from 2006 to 2008 uisng histogram with bin size 4
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column aggregation='None' caption='Global (bin)' datatype='integer' name='[Global (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Global]' peg='0' size='4' />
+            </column>
+            <column datatype='real' name='[Global]' role='measure' type='quantitative' />
+            <column datatype='datetime' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Global]' derivation='CountD' name='[ctd:Global:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Global (bin)]' derivation='None' name='[none:Global (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Year:ok]' member='2006' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2008' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:Global:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:Global:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:Global:qk]' value='c&quot;$&quot;#,##0;&quot;$&quot;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:Global:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:Global:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:Global:qk] + [federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:Global:qk])</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Global (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[Global (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{01269794-572C-47FD-B657-BCC2470DDCB9}' />
+    </worksheet>
+    <worksheet name='TASK6-1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Europe sales distribution &#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column aggregation='None' caption='Europe (bin)' datatype='integer' name='[Europe (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Europe]' peg='0' size='2' />
+            </column>
+            <column datatype='real' name='[Europe]' role='measure' type='quantitative' />
+            <column datatype='datetime' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Europe]' derivation='Count' name='[cnt:Europe:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Europe (bin)]' derivation='None' name='[none:Europe (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Year:ok]' member='2006' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2008' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Europe:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Europe:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Europe:qk]' value='c&quot;$&quot;#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Europe:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Europe:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>([federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Europe:qk] + [federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Europe:qk])</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Europe (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[Europe (bin)]</column>
+          <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[Japan (bin)]</column>
+          <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[North America (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{589F7FC1-B717-482D-AF83-B298C43E467B}' />
+    </worksheet>
+    <worksheet name='TASK6-CONT&apos;D'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>North america sales distribution
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column aggregation='None' caption='North America (bin)' datatype='integer' name='[North America (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[North America]' peg='0' size='2' />
+            </column>
+            <column datatype='real' name='[North America]' role='measure' type='quantitative' />
+            <column-instance column='[North America]' derivation='CountD' name='[ctd:North America:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[North America (bin)]' derivation='None' name='[none:North America (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:North America:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:North America:qk]' value='n&quot;$&quot;#,##0;-&quot;$&quot;#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:North America:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:North America:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>([federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:North America:qk] + [federated.09xuovd0d8mdap10h4r4w1japmu1].[ctd:North America:qk])</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:North America (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{7E4392F6-1388-4C97-9ADD-B756F8F0C2D6}' />
+    </worksheet>
+    <worksheet name='TASK6-CONTD'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Japan sales distribution &#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column aggregation='None' caption='Japan (bin)' datatype='integer' name='[Japan (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Japan]' peg='0' size='2' />
+            </column>
+            <column datatype='real' name='[Japan]' role='measure' type='quantitative' />
+            <column datatype='datetime' datatype-customized='true' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Japan]' derivation='Count' name='[cnt:Japan:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Japan (bin)]' derivation='None' name='[none:Japan (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Year:ok]' member='2006' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:Year:ok]' member='2008' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Japan:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Japan:qk]' value='c&quot;$&quot;#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Japan:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Japan:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>([federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Japan:qk] + [federated.09xuovd0d8mdap10h4r4w1japmu1].[cnt:Japan:qk])</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Japan (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{9C94AEEC-3FC9-4E34-B6E3-5B813A04ABAB}' />
+    </worksheet>
+    <worksheet name='TASK7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#59a14f' italic='true'>INTERPRETATION:</run>
+            <run>Game wise average profits for action and sport and shooter geners</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column datatype='string' name='[Game Title]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Avg' name='[avg:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Game Title]' derivation='None' name='[none:Game Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]' included-values='in-range'>
+            <min>-7.0</min>
+            <max>6.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Genre:nk]' member='&quot;Action&quot;' />
+              <groupfilter function='member' level='[none:Genre:nk]' member='&quot;Shooter&quot;' />
+              <groupfilter function='member' level='[none:Genre:nk]' member='&quot;Sports&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Game Title:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]</column>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]' value='n&quot;$&quot;#,##0;-&quot;$&quot;#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk] / [federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Game Title:nk])</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]</cols>
+      </table>
+      <simple-id uuid='{AC611DF8-AC73-4D10-8114-43C339867483}' />
+    </worksheet>
+    <worksheet name='TASK7-2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' italic='true' underline='true'>INTERPRETATION:</run>
+            <run>Game wie prfit Divergence.
+Action genre have two unprofitable games and sports genre have two unprofitable games and shooter have one unprofitable game.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column datatype='string' name='[Game Title]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Avg' name='[avg:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Game Title]' derivation='None' name='[none:Game Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]' included-values='in-range'>
+            <min>-7.0</min>
+            <max>6.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Genre:nk]' member='&quot;Action&quot;' />
+              <groupfilter function='member' level='[none:Genre:nk]' member='&quot;Shooter&quot;' />
+              <groupfilter function='member' level='[none:Genre:nk]' member='&quot;Sports&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]</column>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Profit:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk] / [federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Game Title:nk])</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]</cols>
+      </table>
+      <simple-id uuid='{757D7163-E9D5-4861-A6BA-D5588A0ED209}' />
+    </worksheet>
+    <worksheet name='TASK7-3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#59a14f' italic='true' underline='true'>INTERPRETATION:</run>
+            <run> Action genre have two unorfitable games and faced maximum loss compared to other geners</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column datatype='string' name='[Game Title]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Avg' name='[avg:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Game Title]' derivation='None' name='[none:Game Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]' included-values='in-range'>
+            <min>-7.0</min>
+            <max>6.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Genre:nk]' member='&quot;Action&quot;' />
+              <groupfilter function='member' level='[none:Genre:nk]' member='&quot;Shooter&quot;' />
+              <groupfilter function='member' level='[none:Genre:nk]' member='&quot;Sports&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]</column>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Profit:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk] / [federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Game Title:nk])</rows>
+        <cols>[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Profit:qk]</cols>
+      </table>
+      <simple-id uuid='{A462F6D7-68A2-4A93-85DE-0A0C1D2C1044}' />
+    </worksheet>
+    <worksheet name='TASK8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>GLOBAL SALES  DISRTIBUTION&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DS1_C6_S5_VideoGamesSales_Data_Practice' name='federated.09xuovd0d8mdap10h4r4w1japmu1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09xuovd0d8mdap10h4r4w1japmu1'>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Global]' role='measure' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Global]' derivation='Sum' name='[pcto:sum:Global:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Global]' derivation='Sum' name='[sum:Global:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Genre:nk]' />
+              <groupfilter function='member' level='[none:Genre:nk]' member='&quot;Platform&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' />
+              <wedge-size column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Global:qk]' />
+              <size column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Global:qk]' />
+              <text column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[pcto:sum:Global:qk]' />
+              <text column='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FCFDEAD9-D167-45A4-B634-305E4944807E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='87781' id='8' name='TASK8' w='36769' x='60154' y='4239' />
+        <zone h='93392' id='9' name='TASK7' w='56462' x='2308' y='4364' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='12' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='87781' id='8' is-fixed='true' name='TASK8' w='36769' x='60154' y='4239'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='93392' id='9' is-fixed='true' name='TASK7' w='56462' x='2308' y='4364'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AE83DA9B-3DB5-49B5-9689-BB612F79FCC8}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='TASK 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E0B36087-3A2B-461F-97A3-E9DB05B59C18}' />
+    </window>
+    <window class='worksheet' name='TASK1-2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66BABC24-206C-4C7A-A5B0-58C8F7F9EF90}' />
+    </window>
+    <window class='worksheet' name='TASK 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0FFFCBF3-33A7-490F-91BE-E25FCAD6F034}' />
+    </window>
+    <window class='worksheet' name='TASK2-2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5D9D427C-9FB3-45CA-86B2-822E82B34079}' />
+    </window>
+    <window class='worksheet' name='TASK3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.09xuovd0d8mdap10h4r4w1japmu1].[tyr:Year:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ADBF60FB-D7D0-4B3C-BFC3-F9B3B9D8685D}' />
+    </window>
+    <window class='worksheet' name='TASK4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A27749D8-CAE4-4F9D-A38B-632E8914B9AB}' />
+    </window>
+    <window class='worksheet' name='TASK5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9960ECF0-DACA-4AF6-B298-105DFED49BC5}' />
+    </window>
+    <window class='worksheet' name='TASK6-1'>
+      <cards>
+        <edge name='left'>
+          <strip size='156'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EBFCB3B5-3889-4A04-8CA2-15B31C335F54}' />
+    </window>
+    <window class='worksheet' name='TASK6-CONTD'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{08498F6D-BA35-471B-8B17-9CD78649E6E4}' />
+    </window>
+    <window class='worksheet' name='TASK6-CONT&apos;D'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5000C069-376E-4B40-9F85-FF5956B46F6F}' />
+    </window>
+    <window class='worksheet' name='TASK7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.09xuovd0d8mdap10h4r4w1japmu1].[avg:Profit:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{41B9673F-42A8-4A15-A326-D0EC44589BA7}' />
+    </window>
+    <window class='worksheet' name='TASK7-2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Profit:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F516E10B-D716-4831-A82D-93CDC968EE46}' />
+    </window>
+    <window class='worksheet' name='TASK7-3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Profit:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CAC60B7E-C6E5-4831-832B-694A5F924F93}' />
+    </window>
+    <window class='worksheet' maximized='true' name='TASK8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09xuovd0d8mdap10h4r4w1japmu1].[none:Genre:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.09xuovd0d8mdap10h4r4w1japmu1].[sum:Global:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E4A7A2E6-678F-48D0-993F-B1F7321AB538}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E6185458-70EB-4E66-8BB8-6CD4A58D80B4}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='TASK7' />
+        <viewpoint name='TASK8'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{690C0DB8-1297-4FC2-936D-A49FD56C46C2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='TASK8' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
